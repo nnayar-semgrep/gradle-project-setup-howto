@@ -15,4 +15,4 @@ jobs:
       - run: | 
           apk update
           apk add openjdk21 maven
-          semgrep ci --allow-local-builds --supply-chain --verbose
+          semgrep ci --allow-local-builds --supply-chain --verbose --max-log-list-entries=100000
